@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+  <!-- Person head -->
+  <circle cx="18" cy="8" r="4.5" stroke="white" stroke-width="2" fill="none"/>
+  <!-- Person body -->
+  <path d="M10 24c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- Rising arrow (career growth) -->
+  <path d="M6 30 L14 22 L20 26 L30 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Arrow head -->
+  <path d="M26 13 L30 14 L29 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

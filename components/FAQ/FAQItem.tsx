@@ -16,7 +16,7 @@ const FAQItem = ({ faqData }: { faqData: FaqData }) => {
           onClick={() => {
             handleFaqToggle(id);
           }}
-          className="flex cursor-pointer items-center justify-between px-6 py-5 text-metatitle3 font-medium text-black dark:text-white lg:px-9 lg:py-7.5"
+          className="flex cursor-pointer items-center justify-between px-6 py-5 text-metatitle3 font-medium text-primary dark:text-white lg:px-9 lg:py-7.5"
         >
           {quest}
 
@@ -49,7 +49,7 @@ const FAQItem = ({ faqData }: { faqData: FaqData }) => {
           )}
         </button>
         <p
-          className={`border-t border-stroke px-6 py-5 dark:border-strokedark lg:px-9 lg:py-7.5 ${
+          className={`border-t bg-white border-stroke px-6 py-5 dark:border-strokedark lg:px-9 lg:py-7.5 ${
             activeFaq === id ? "block" : "hidden"
           }`}
         >

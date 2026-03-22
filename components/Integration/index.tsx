@@ -11,8 +11,8 @@ const Integration = () => {
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              title: `INTEGRATIONS`,
-              subtitle: `Remotely Maintain Your Data, From Anywhere, Anytime.`,
+              title: `Study Abroad`,
+              subtitle: `Your Gateway to Global Education`,
               description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`,
             }}
           />
@@ -59,9 +59,9 @@ const Integration = () => {
             >
               <div className="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark">
                 <Image
-                  width={50}
-                  height={50}
-                  src="./images/brand/brand-07.svg"
+                  width={80}
+                  height={80}
+                  src="/images/flags/australia-6eefc542.jpeg"
                   alt="Brand"
                 />
               </div>
@@ -106,9 +106,9 @@ const Integration = () => {
             >
               <div className="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark">
                 <Image
-                  width={50}
-                  height={50}
-                  src="./images/brand/brand-08.svg"
+                  width={80}
+                  height={80}
+                  src="/images/flags/usa-a2ca9f4d.png"
                   alt="Brand"
                 />
               </div>

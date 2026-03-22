@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+  <!-- Clipboard board -->
+  <rect x="8" y="7" width="20" height="24" rx="2" stroke="white" stroke-width="2" fill="none"/>
+  <!-- Clipboard top clip -->
+  <path d="M14 7 Q14 4 18 4 Q22 4 22 7" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Checklist items -->
+  <polyline points="12,14 14,16 18,12" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <line x1="20" y1="14" x2="25" y2="14" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  <polyline points="12,20 14,22 18,18" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <line x1="20" y1="20" x2="25" y2="20" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Magnifying glass -->
+  <circle cx="24" cy="28" r="4" stroke="white" stroke-width="2" fill="none"/>
+  <line x1="27" y1="31" x2="30" y2="34" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>

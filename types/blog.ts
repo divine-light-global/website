@@ -17,3 +17,9 @@ export type Blog = {
   tags?: string[];
   publishedAt?: string;
 };
+
+export type MainBannerData = {
+  _id: number;
+  title: string;
+  mainImage?: any;
+};

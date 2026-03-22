@@ -3,10 +3,10 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Support Page - Solid SaaS Boilerplate",
+  title: "Contact Us - Divine Light Global Pathway",
 
   // other metadata
-  description: "This is Support page for Solid Pro"
+  description: "Contact us for any questions or support - Divine Light Global Pathway"
 };
 
 const SupportPage = () => {

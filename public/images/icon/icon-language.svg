@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+  <!-- Open book left page -->
+  <path d="M18 28 C18 28 8 24 8 14 L8 8 C12 8 16 10 18 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Open book right page -->
+  <path d="M18 28 C18 28 28 24 28 14 L28 8 C24 8 20 10 18 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Book spine -->
+  <line x1="18" y1="13" x2="18" y2="28" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Speech bubble -->
+  <path d="M22 6 Q29 6 29 12 Q29 17 23 17 L21 19 L21 17 Q16 17 16 12 Q16 6 22 6Z" stroke="white" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+  <!-- Star inside bubble -->
+  <path d="M23 9.5 L23.6 11.3 L25.5 11.3 L24 12.4 L24.6 14.2 L23 13.1 L21.4 14.2 L22 12.4 L20.5 11.3 L22.4 11.3 Z" fill="white"/>
+</svg>

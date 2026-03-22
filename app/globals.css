@@ -1,4 +1,6 @@
 @import 'tailwindcss';
+/* globals.css or styles.css */
+
 
 @custom-variant dark (&:is(.dark *));
 
@@ -19,8 +21,10 @@
   --color-black: #181c31;
   --color-blackho: #2c3149;
   --color-blacksection: #1c2136;
-  --color-primary: #006bff;
+  --color-primary: #134374;
   --color-primaryho: #0063ec;
+  --color-secondary: #dfefff;
+  --color-tertiary: #21b0e8;
   --color-meta: #20c5a8;
   --color-waterloo: #757693;
   --color-manatee: #999aa1;
@@ -28,18 +32,18 @@
   --color-zumthor: #edf5ff;
   --color-socialicon: #d1d8e0;
 
-  --text-metatitle: 12px, 20px;
-  --text-sectiontitle: 14px, 22px;
-  --text-regular: 16px, 26px;
-  --text-metatitle3: 18px, 26px;
-  --text-metatitle2: 20px, 32px;
-  --text-para2: 22px, 35px;
-  --text-itemtitle: 26px, 32px;
-  --text-itemtitle2: 24px, 32px;
-  --text-hero: 44px, 58px;
-  --text-sectiontitle3: 44px, 55px;
-  --text-sectiontitle2: 40px, 52px;
-  --text-sectiontitle4: 34px, 48px;
+  --text-metatitle: 12px;
+  --text-sectiontitle: 14px;
+  --text-regular: 16px;
+  --text-metatitle3: 18px;
+  --text-metatitle2: 20px;
+  --text-para2: 22px;
+  --text-itemtitle: 26px;
+  --text-itemtitle2: 24px;
+  --text-hero: 44px;
+  --text-sectiontitle3: 44px;
+  --text-sectiontitle2: 40px;
+  --text-sectiontitle4: 34px;
 
   --container-c-1390: 86.875rem;
   --container-c-1315: 82.188rem;
@@ -222,4 +226,13 @@ pre {
 
 .active-tab {
   @apply bg-stroke text-black dark:bg-blackho dark:text-white;
+}
+
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-tertiary {
+  background-color: var(--color-tertiary);
 }

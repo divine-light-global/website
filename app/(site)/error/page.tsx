@@ -20,7 +20,7 @@ const ErroPage = () => {
           height={400}
         />
 
-        <h2 className="mb-5 text-2xl font-semibold text-black dark:text-white md:text-4xl">
+        <h2 className="mb-5 text-2xl font-semibold text-primary dark:text-white md:text-4xl">
           This Page Does Not Exist
         </h2>
         <p className="mb-7.5">

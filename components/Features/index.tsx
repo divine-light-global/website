@@ -3,6 +3,8 @@ import React from "react";
 import featuresData from "./featuresData";
 import SingleFeature from "./SingleFeature";
 import SectionHeader from "../Common/SectionHeader";
+import serviceData from "../Service/serviceData";
+import SingleService from "../Service/SingleService";
 
 const Feature = () => {
   return (
@@ -13,11 +15,9 @@ const Feature = () => {
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              title: "SOLID FEATURES",
-              subtitle: "Core Features of Solid",
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-            ante in maximus.`,
+              title: "OUR SERVICES",
+              subtitle: "Learn. Prepare. Succeed Globally",
+              description: `We don't just process applications- we build pathways to your future`,
             }}
           />
           {/* <!-- Section Title End --> */}
@@ -25,8 +25,8 @@ const Feature = () => {
           <div className="mt-12.5 grid grid-cols-1 gap-7.5 md:grid-cols-2 lg:mt-15 lg:grid-cols-3 xl:mt-20 xl:gap-12.5">
             {/* <!-- Features item Start --> */}
 
-            {featuresData.map((feature, key) => (
-              <SingleFeature feature={feature} key={key} />
+            {serviceData.map((service, key) => (
+                <SingleService service={service} key={key} />
             ))}
             {/* <!-- Features item End --> */}
           </div>

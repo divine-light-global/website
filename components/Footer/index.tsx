@@ -5,7 +5,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <footer className="border-t border-stroke bg-white dark:border-strokedark dark:bg-blacksection">
+      <footer className="border-t border-stroke bg-primary text-white dark:border-strokedark dark:bg-blacksection">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           {/* <!-- Footer Top --> */}
           <div className="py-20 lg:py-25">
@@ -28,11 +28,25 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="animate_top w-1/2 lg:w-1/4"
               >
-                <a href="/" className="relative">
+                <a href="/" className="relative flex w-full">
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/logo-light.svg"
+                    src="/images/logo/logo.png"
+                    alt="Logo"
+                    className="dark:hidden"
+                  />
+                  <Image
+                    width={210}
+                    height={80}
+                    src="/images/logo/logo-dark.svg"
+                    alt="Logo"
+                    className="hidden dark:block"
+                  />
+                  <Image
+                    width={210}
+                    height={80}
+                    src="/images/logo/logo9.png"
                     alt="Logo"
                     className="dark:hidden"
                   />
@@ -46,18 +60,8 @@ const Footer = () => {
                 </a>
 
                 <p className="mb-10 mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Study Abroad - Choose Your Destination
                 </p>
-
-                <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
-                  contact
-                </p>
-                <a
-                  href="#"
-                  className="text-itemtitle font-medium text-black dark:text-white"
-                >
-                  hello@solid.com
-                </a>
               </motion.div>
 
               <div className="flex w-full flex-col gap-8 md:flex-row md:justify-between md:gap-0 lg:w-2/3 xl:w-7/12">
@@ -79,46 +83,39 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top"
                 >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
+                  <h4 className="mb-9 text-itemtitle2 font-medium text-tertiary dark:text-white">
                     Quick Links
                   </h4>
 
                   <ul>
                     <li>
                       <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        href="/#"
+                        className="mb-3 inline-block hover:text-tertiary"
                       >
                         Home
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        href="/about-us"
+                        className="mb-3 inline-block hover:text-tertiary"
                       >
-                        Product
+                        About Us
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        href="/faq"
+                        className="mb-3 inline-block hover:text-tertiary"
                       >
-                        Careers
+                        FAQ
                       </a>
                     </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Pricing
-                      </a>
-                    </li>
+                    
                   </ul>
                 </motion.div>
-
+                
                 <motion.div
                   variants={{
                     hidden: {
@@ -137,47 +134,103 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top"
                 >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
-                    Support
+                  <h4 className="mb-9 text-itemtitle2 font-medium text-tertiary dark:text-white">
+                    Our services
                   </h4>
 
                   <ul>
                     <li>
                       <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        href="/services/personalized-career-guidance"
+                        className="mb-3 inline-block hover:text-tertiary"
                       >
-                        Company
+                        Personalized Career Guidance
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        href="/services/language-classes"
+                        className="mb-3 inline-block hover:text-tertiary"
                       >
-                        Press media
+                        IELTS, PTE & Japanese Classes
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        href="/services/scholarship-financial-advice"
+                        className="mb-3 inline-block hover:text-tertiary"
                       >
-                        Our Blog
+                        Scholarship & Financial Advice
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        href="/services/visa-guidance-interview-prep"
+                        className="mb-3 inline-block hover:text-tertiary"
                       >
-                        Contact Us
+                        Visa Guidance & Interview Prep
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/services/pre-departure-support"
+                        className="mb-3 inline-block hover:text-tertiary"
+                      >
+                        Pre-Departure Support
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/services/student-screening-document-preparation"
+                        className="mb-3 inline-block hover:text-tertiary"
+                      >
+                        Screening & Document Preparation
                       </a>
                     </li>
                   </ul>
                 </motion.div>
+<motion.div
+                variants={{
+                  hidden: {
+                    opacity: 0,
+                    y: -20,
+                  },
 
-                <motion.div
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                  },
+                }}
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 1, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="animate_top w-1/2 lg:w-1/4"
+              >
+                <p className="mb-3.5 text-sectiontitle uppercase tracking-[5px] text-tertiary">
+                  contact
+                </p>
+                <div className="mb-3.5">
+                  <a
+                    href="mailto:divinelightglobalpathway@gmail.com"
+                    className="text-white dark:text-white"
+                  >
+                    divinelightglobalpathway@gmail.com
+                  </a>
+                </div>
+              <div>
+                <p className="mb-3.5">D&D tower 6th floor, Global Bank-Mid Baneshwor</p>
+              </div>
+              <div>
+               <p className="mb-1.5">
+                  <a href="tel:+97714534477">+977 01 4534477</a>
+                </p>
+                <p className="mb-1.5">
+                  <a href="tel:+9779705435655">+977 970 5435 655</a>
+                </p>
+              </div>
+              </motion.div>
+                {/* <motion.div
                   variants={{
                     hidden: {
                       opacity: 0,
@@ -237,14 +290,15 @@ const Footer = () => {
                       </button>
                     </div>
                   </form>
-                </motion.div>
+                </motion.div> */}
               </div>
+              
             </div>
           </div>
           {/* <!-- Footer Top --> */}
 
           {/* <!-- Footer Bottom --> */}
-          <div className="flex flex-col flex-wrap items-center justify-center gap-5 border-t border-stroke py-7 dark:border-strokedark lg:flex-row lg:justify-between lg:gap-0">
+          <div className="flex flex-col flex-wrap items-center justify-center gap-5 border-t text-red border-stroke py-7 dark:border-strokedark lg:flex-row lg:justify-between lg:gap-0">
             <motion.div
               variants={{
                 hidden: {
@@ -264,18 +318,18 @@ const Footer = () => {
               className="animate_top"
             >
               <ul className="flex items-center gap-8">
-                <li>
+                {/* <li>
                   <a href="#" className="hover:text-primary">
                     English
                   </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary">
+                </li> */}
+                {/* <li>
+                  <a href="/privacy-policy" className="hover:text-tertiary">
                     Privacy Policy
                   </a>
-                </li>
+                </li> */}
                 <li>
-                  <a href="#" className="hover:text-primary">
+                  <a href="/support" className="hover:text-tertiary">
                     Support
                   </a>
                 </li>
@@ -301,7 +355,7 @@ const Footer = () => {
               className="animate_top"
             >
               <p>
-                &copy; {new Date().getFullYear()} Solid. All rights reserved
+                &copy; {new Date().getFullYear()} Divine Light Global Education Pathways Pvt. Ltd. All rights reserved
               </p>
             </motion.div>
 
@@ -325,9 +379,9 @@ const Footer = () => {
             >
               <ul className="flex items-center gap-5">
                 <li>
-                  <a href="#" aria-label="social icon">
+                  <a href="https://www.facebook.com/profile.php?id=61583178183314" target="_blank" aria-label="social icon">
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-tertiary"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -348,10 +402,10 @@ const Footer = () => {
                     </svg>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#" aria-label="social icon">
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-tertiary"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -371,11 +425,16 @@ const Footer = () => {
                       </defs>
                     </svg>
                   </a>
-                </li>
+                </li> */}
                 <li>
-                  <a href="#" aria-label="social icon">
+                  <a
+                    href="https://www.linkedin.com/in/divine-light-509b433a2/"
+                    aria-label="social icon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-tertiary"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -396,10 +455,10 @@ const Footer = () => {
                     </svg>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#" aria-label="social icon">
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-tertiary"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -415,7 +474,7 @@ const Footer = () => {
                       </defs>
                     </svg>
                   </a>
-                </li>
+                </li> */}
               </ul>
             </motion.div>
           </div>
