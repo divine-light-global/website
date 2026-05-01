@@ -16,10 +16,10 @@ import Destination from "@/components/Destination";
 import DocsPage from "./docs/page";
 
 export const metadata: Metadata = {
-  title: "Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate",
+  title: "DLGEP - Divine Light Global Education Pathway",
 
   // other metadata
-  description: "This is Home for Solid Pro"
+  description: "This is Home for Divine Light"
 };
 
 export default function Home() {
